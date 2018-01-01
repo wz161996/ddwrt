@@ -309,10 +309,10 @@ killall dnsmasq
 echo
 sleep 2
 echo -e "\e[1;36m 获取脚本更新脚本\e[0m"
-curl -k https://raw.githubusercontent.com/clion007/dnsmasq/master/fqad_update.sh -o /etc/dnsmasq/fqad_update.sh && chmod 755 /etc/dnsmasq/fqad_update.sh
+curl -k https://raw.githubusercontent.com/wz161996/ddwrt/master/fqad_update.sh -o /etc/dnsmasq/fqad_update.sh && chmod 755 /etc/dnsmasq/fqad_update.sh
 echo
 echo -e "\e[1;36m 获取规则更新脚本\e[0m"
-curl -k https://raw.githubusercontent.com/clion007/dnsmasq/master/fqadrules_update.sh -o /etc/dnsmasq/fqadrules_update.sh && chmod 755 /etc/dnsmasq/fqadrules_update.sh
+curl -k https://raw.githubusercontent.com/wz161996/ddwrt/master/fqadrules_update.sh -o /etc/dnsmasq/fqadrules_update.sh && chmod 755 /etc/dnsmasq/fqadrules_update.sh
 echo
 sleep 1
 grep "dnsmasq" $CRON_FILE >/dev/null
